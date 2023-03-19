@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS file included -->
+	<link rel="stylesheet" type="text/css" href="survey.css">
+
+	<!-- JavaScript file included -->
+	<script src="survey.js"></script>
+
+	<title>Build A Survey Form</title>
+</head>
+
+<body onload="document.registraion.fnm.focus();">
+	<h1>Technology Survey For Remote Learning</h1>
+	------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	<!-- Create form -->
+	<form id="form" onsubmit="return formValidation();">
+		
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name" > First Name </label>
+
+			<!-- Input type text -->
+			<input type="text" id="name" placeholder="Enter Your First Name" required/>
+		</div>
+
+		<div class="form-control">
+			<label for="name" id="label-name"> Last Name </label>
+
+			<!-- Input type text -->
+			<input type="text" id="name" placeholder="Enter Your Last Name" required/>
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="lebel-email"> Email ID </label>
+
+			<!-- Input type email -->
+			<input type="email" id="email" placeholder="Enter Your Email ID" required/>
+		</div>
+
+		<div class="form-control">
+			<label for="number" id="lebel-number"> Mobile Number </label>
+
+			<!-- Input type email -->
+			<input type="number" id="number" placeholder="Enter Your Mobile Number" required/>
+		</div>
+
+		<div class="form-control">
+			<label for="add" id="lebel-add"> Address </label>
+
+			<!-- Input type add -->
+			<input type="text" id="add" placeholder="Enter Your Address" required/>
+		</div>
+
+		<div class="form-control1">
+			<p> 1. Please evaluate the software used during remote learning. </p>
+		</div>
+
+			-------------------------------------------------------------------
+		<div class="radio-option">
+			<label>Poor</label>
+			<input type="radio" id="que1" name="scaling">
+			<input type="radio" id="que2" name="scaling">
+			<input type="radio" id="que3" name="scaling">
+			<input type="radio" id="que4" name="scaling">
+			<input type="radio" id="que5" name="scaling"> 
+			<label>Very Useful</label>
+			<br>
+		</div>
+		<br>
+
+		<div class="form-control3">
+			<p> 2. Please evaluate the voice quality during remote learning. </p>
+		</div>
+
+			-------------------------------------------------------------------
+		<div class="radio-option">
+			<label>Poor</label>
+			<input type="radio" id="que6" name="scaling1">
+			<input type="radio" id="que7" name="scaling1">
+			<input type="radio" id="que8" name="scaling1">
+			<input type="radio" id="que9" name="scaling1">
+			<input type="radio" id="que10" name="scaling1"> 
+			<label>Very Well</label>
+			<br>
+		</div>
+		<br>
+
+		<div class="form-control5">
+			<p> 3. Please evaluate the video quality during remote learning. </p>
+		</div>
+
+			-------------------------------------------------------------------
+		<div class="radio-option">
+			<label>Poor</label>
+			<input type="radio" id="que11" name="scaling2">
+			<input type="radio" id="que12" name="scaling2">
+			<input type="radio" id="que13" name="scaling2">
+			<input type="radio" id="que14" name="scaling2">
+			<input type="radio" id="que15" name="scaling2"> 
+			<label>Very Well</label>
+			<br>
+		</div>
+		<br>
+
+		<div class="form-control7">
+			<p> 4. I can here and track every subject that the instructor mentions. </p>
+		</div>
+
+			-------------------------------------------------------------------
+		<div class="radio-option">
+			<label>Poor</label>
+			<input type="radio" id="que16" name="scaling3">
+			<input type="radio" id="que17" name="scaling3">
+			<input type="radio" id="que18" name="scaling3">
+			<input type="radio" id="que19" name="scaling3">
+			<input type="radio" id="que20" name="scaling3"> 
+			<label>Very Well</label>
+			<br>
+		</div>
+		<br>
+
+		<div class="form-control9">
+			<p> 5. I've encountered connection problems during the sessions. </p><br>
+		</div>
+
+			-------------------------------------------------------------------
+		<div class="radio-option">
+			<label>Disagree</label>
+			<input type="radio" id="que21" name="scaling4">
+			<input type="radio" id="que22" name="scaling4">
+			<input type="radio" id="que23" name="scaling4">
+			<input type="radio" id="que24" name="scaling4">
+			<input type="radio" id="que25" name="scaling4"> 
+			<label>Agree</label>
+			<br>
+		</div>
+		<br>
+
+		<div class="form-control">
+			<label for="comment">Any Comments Or Suggestions</label>
+			<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+		</div>
+		
+		<button type="submit" value="submit"> Submit </button>
+	</form>
+</body>
+</html>
